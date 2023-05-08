@@ -6,5 +6,9 @@ import { Component,Input} from '@angular/core';
   styleUrls: ['./article-element.component.css']
 })
 export class ArticleElementComponent {
-  @Input()element:{type:string,title:string,content:string};
+  @Input()element:{title:string,type:string,content:string};
+  // @Input()title:string;
+  // @Input()type:string;
+  // @Input()content:string;
+  @Input()mesArticles:Array<object> = [];
 }

@@ -2,9 +2,8 @@
     <app-blog-control-center [mesArticles]="mesArticles" [newArticleContent]="newArticleContent" [newArticleTitle]="newArticleTitle" [mesArticles]="mesArticles"></app-blog-control-center>
     <div class="row mt-1">
         <div class="col">
-            <app-article-element
-            *ngFor="let articleElement of mesArticles"
-            [element]="articleElement">
+            <app-article-element *ngFor="let articleElement of [mesArticles]="mesArticles" 
+            [element]= articleElement">
             </app-article-element>
         </div>
     </div>
