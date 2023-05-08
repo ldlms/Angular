@@ -1,0 +1,7 @@
+<button (click)="toggleActive()" (click)="toggleTxt()">{{txtButton}}</button>
+<p *ngIf="active?true:false">Le fameux paragraphe</p>
+<div>
+<div [ngClass]="{maClasse:i>5?true:false}" [ngStyle]="{backgroundColor:i>5?colorGreen:colorWhite}" *ngFor="let tab of tabs,let i=index">
+    <p>{{tab}} - {{i}}</p>
+</div>
+</div>
